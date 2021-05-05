@@ -1,0 +1,105 @@
+.parent {
+    position: relative;
+    width: auto;
+    height: 100%;
+
+
+    .home-access{
+      //position: absolute;
+      //top: 50%;
+      //left: auto;
+      //justify-content: center !important;
+      //align-items: center !important;
+      z-index: 10000;
+      text-align: center;
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .sub {
+      font-size: 1rem;
+      font-weight: 200;
+    }
+
+    #cf {
+        height:100vh;
+        width: auto;
+        margin:0 auto;
+        overflow: hidden;
+      }
+      
+      #cf img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        overflow: hidden;
+        position:absolute;
+//        flex-grow: 1;
+        margin: 0 auto !important;
+        //-webkit-transition: opacity 1s ease-in-out;
+        //-moz-transition: opacity 1s ease-in-out;
+        //-o-transition: opacity 1s ease-in-out;
+        //transition: opacity 1s ease-in-out;
+        animation-name: "cfFadeInOut";
+        //animation: imageAnimation 30s linear infinite 0s; 
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 10s; //8s
+        &:nth-of-type(1) {
+          animation-delay: 8s; //6s
+        }
+        &:nth-of-type(2) {
+          animation-delay: 6s; //4s
+        }
+        &:nth-of-type(3) {
+          animation-delay: 4s; //2s
+        }
+        &:nth-of-type(4) {
+          animation-delay: 2s; //0
+        }
+        &:nth-of-type(5){
+          animation-delay: 0; //0
+        }
+      }
+      
+
+      @keyframes cfFadeInOut {
+        0% {
+          opacity:1;
+        }
+        17% {
+          opacity:1;
+        }
+        25% {
+          opacity:0;
+          z-index: 100;
+        }
+        92% {
+          opacity:0;
+          z-index: 1;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      #cf img:nth-of-type(1) {
+        animation-delay: 6s;
+      }
+      #cf img:nth-of-type(2) {
+        animation-delay: 4s;
+      }
+      #cf img:nth-of-type(3) {
+        animation-delay: 2s;
+      }
+      #cf img:nth-of-type(4) {
+        animation-delay: 0;
+      
+      #cf img {
+      animation-name: cfFadeInOut;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-direction: alternate;
+      }}}

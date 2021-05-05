@@ -1,0 +1,52 @@
+footer {
+
+    br{
+        height: 0.5rem;;
+    }
+
+    .OA-address {
+        font-family: 'Adam'!important ;
+        margin-bottom: 5px !important;
+    }
+
+    .OA-email{
+        margin-bottom: 5px !important;
+    }
+
+    .main-footer {
+        margin-top: 60px !important;
+        padding: 20px !important;
+        border-top: 1px solid #0F0F0E !important;
+        font-size: 0,5rem !important;
+    }
+
+    .footer-content {
+        width: 100% !important;
+        margin: 0 !important;
+        //padding: 0 !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+
+    .full{
+        float: none !important;
+        clear: both !important;
+    }
+
+    li {
+        list-style-type: none;
+        text-align: right;
+    }
+
+    .chivo{
+        font-family: 'FuturaLT';
+        font-size: 0.75rem !important;
+
+        a{
+            font-family: 'FuturaLT' !important;
+            &:hover{
+                color: #353535;
+            }
+        }
+    }
+}

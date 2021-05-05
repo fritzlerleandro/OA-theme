@@ -1,0 +1,123 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'colors';
+@import 'header';
+@import 'woocommerce';
+@import 'front-page';
+@import 'pagina-proyecto';
+@import 'flexslider';
+@import 'single';
+@import 'footer';
+
+.home {
+    .site-header {
+        display: none;
+    }
+    .site-footter {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'Adam';
+    src: url('fonts/Adam-Light.ttf');
+    src: url('fonts/Adam-Bold.ttf');
+    src: url('fonts/Adam-Medium.ttf');
+    font-weight: Light, Bold, Medium;
+
+    font-family: 'FuturaLT';
+    src: url('fonts/FuturaLT-Book.ttf');
+}
+
+body {
+    font-family: 'Adam' !important;
+    //margin-top: 5rem !important;
+    //
+}
+
+    .category-todos {
+        margin-top: 6rem !important;
+    }
+
+a{
+    text-decoration: none !important;
+    color:$dark;
+    font-family: 'Adam' !important;
+}
+
+p {
+    text-decoration: none !important;
+    color:$dark;
+    font-family: 'FuturaLT' !important;
+}
+
+.content{
+    padding: 1rem 0;
+    margin-top: 5rem;
+    margin-bottom: 3rem !important;
+}
+
+.thumbnails .col-md-6 img {
+    max-height:400px;
+   }
+   .thumbnails .col-md-3 img {
+    max-height:200px;
+   }
+
+
+
+.thumbnail-portfolio {
+    position: relative;
+    height: 50vh;
+    max-height:200px;
+    width: auto;
+    z-index: -1;
+
+        &:hover{
+            opacity: 0.5;
+
+        }
+
+        a{
+            text-decoration: none !important;
+        }
+}
+
+.top-menu{
+    margin: 1rem;
+}
+
+.titulo-portfolio {
+    //visibility:hidden;
+    color: $dark;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0;
+    font-weight: 800;
+    background-color: white;
+    z-index: 10;
+    margin-top: 1rem;
+    
+        a{
+            text-decoration: none;
+            color: $dark !important;
+        }    
+}
+
+.link-proyecto{
+    text-decoration: none;
+}
+
+
+.thumbnail-portfolio:hover > .titulo-portfolio {
+    visibility:visible;
+}
+
+.mobile {
+    margin: auto;
+
+    @media screen and (max-width:768px){
+        display: none;
+    }
+}

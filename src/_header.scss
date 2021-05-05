@@ -1,0 +1,54 @@
+.espaciado {
+    justify-content: flex-end !important;
+}
+
+.white-nav {
+    background-color:#fff;
+}
+
+.header {
+        background: $light !important;
+        max-height: 75px !important;
+        height: 100px;
+        padding: 1rem 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.24);
+    
+        a {
+        margin:.25rem 0px;
+
+        :hover {
+                color: #f0f0f0 !important;
+        }
+
+        .logo {
+                height: 50px !important;
+                width: auto;
+                margin: auto;
+        }
+    }
+
+        .top-menu{
+
+            display: none;
+
+            @media screen and (min-width:992px){
+                display: flex;
+            }
+
+            list-style-type: none;
+
+                li{
+                    list-style-type: none;
+
+                        a{
+                            display: block;
+                            padding: .25rem 1rem;
+                            color: $dark;
+                            font-family: 'Adam', 'san-serif' !important;
+                            font-size: 1.1rem;
+                            font-weight: bold;
+                        }
+
+                }
+        }
+}
