@@ -25,7 +25,7 @@ figure {
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  margin: 0 0;
+  margin: 0 0 !important;
 }
 
 .crossfade > figure {
