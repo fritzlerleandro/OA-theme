@@ -1,11 +1,11 @@
 <footer class="d-flex container main-footer mt-5">
     <div class="d-flex full footer-content border-top border-dark">
         <div class="contact-infos col-sm-12 col-md-6 mt-3">
-            <p class="OA-address"><a class="direccion" href="#"> Córdoba 534/8, piso 6 departamento A,<br>Parana, Entre Rios</a></p>
+            <p class="OA-address"><a class="direccion" href="#"><br>Parana, Entre Rios</a></p>
             <!-- <br> -->
-            <p class="OA-email"><a class="email" href="mailto:contacto@oficinaambulante.com.ar">contacto@oficinaambulante.com.ar</a></p>
-            <p class="OA-email"><a class="email" href="tel:+5493434611978">(343) 461 1978</a></p>
-            <p class="OA-email"><a class="email" href="tel:+5493436115114">(343) 611 5114</a></p>
+            <p class="OA-email"><a class="footer-email" href="mailto:contacto@oficinaambulante.com.ar">contacto@oficinaambulante.com.ar</a></p>
+            <!-- <p class="OA-email"><a class="email" href="tel:+5493434611978">(343) 461 1978</a></p>
+            <p class="OA-email"><a class="email" href="tel:+5493436115114">(343) 611 5114</a></p> -->
         </div>
         <div class="social-links col-sm-12 col-md-6 mt-3">
             <ul>
