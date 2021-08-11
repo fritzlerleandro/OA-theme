@@ -31,7 +31,7 @@
         </button>
         <a class="navbar-brand d-flex" href="<?php bloginfo('url');?>/portfolio/todos">
             <img src="<?php bloginfo('template_directory');?>/images/OA-logo.jpg" alt="logo" class="logo" style="height: 3rem">
-            <p class="mobile titulo-nav">OFICINA AMBULANTE</p>
+            <!-- <p class="mobile titulo-nav">OFICINA AMBULANTE</p> -->
         </a>
         <?php
         wp_nav_menu( array(
