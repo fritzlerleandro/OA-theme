@@ -10708,9 +10708,52 @@ footer .chivo a:hover {
   src: url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/FuturaLT-Light.ttf");
   font-family: "FuturaLT";
   src: url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/FuturaLT-Book.ttf");
+
+/* 	font-family: 'Adam';
+	src: url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Light.ttf"),
+	url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Bold.ttf"),
+		url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Medium.ttf"); */
 }
+
+
+
+@font-face {
+  font-family: "Adam";
+  src:  url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Light.ttf") format('truetype');
+	font-weight: lighter;
+	  font-style: normal;
+}
+
+@font-face {
+  font-family: "Adam";
+  src:  url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Bold.ttf") format('truetype');
+	font-weight: bold;
+	  font-style: normal;
+}
+
+@font-face {
+  font-family: "Adam";
+  src:  url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Medium.ttf") format('truetype');
+	font-weight: normal;
+	  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Adam";
+  src:  url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Light.ttf") format('truetype') font-weight-lighter,
+  		url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Bold.ttf") format('truetype') font-weight-bold,
+  		url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Medium.ttf") format('truetype') font-weight-normal;
+} */
+
+
 body {
   font-family: "FuturaLT" !important;
+}
+
+.titulo-nav {
+	font-family: Adam !important;
+	font-weight: bolder;
+	letter-spacing: 0.2rem;
 }
 
 .category-todos {
