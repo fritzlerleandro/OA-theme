@@ -9,8 +9,8 @@ function load_stylesheets(){
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
-wp_enqueue_script( 'jquery-lightbox', get_stylesheet_directory_uri() . '/js/jquery.lightbox-0.5.min.js', array( 'jquery' ) );
-wp_enqueue_style( 'jquery-lightbox', get_stylesheet_directory_uri() . '/css/jquery.lightbox-0.5.css' );
+// wp_enqueue_script( 'jquery-lightbox', get_stylesheet_directory_uri() . '/js/jquery.lightbox-0.5.min.js', array( 'jquery' ) );
+// wp_enqueue_style( 'jquery-lightbox', get_stylesheet_directory_uri() . '/css/jquery.lightbox-0.5.css' );
 
 function load_javascript(){
     wp_register_script('custom', get_template_directory_uri() . '/app.js', 'jquery', 1, true);
@@ -251,48 +251,60 @@ function sk_wcmenucart($menu, $args) {
 
 }}
 
+// Widgets Areas to the footer 
 function register_widget_areas() {
 
   register_sidebar( array(
-    'name'          => 'Footer area one',
+    'name'          => 'Footer Area 1',
     'id'            => 'footer_area_one',
-    'description'   => 'This widget area discription',
-    'before_widget' => '<section class="footer-area footer-area-one">',
+    'description'   => 'Podés agregar cualquier tipo de contenido acá',
+    'before_widget' => '<section class="footer-area-1 col-sm-12 col-lg-auto col-md-6 mt-3">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
+    'before_title'  => '<h5 class="footer-widget-title">',
+    'after_title'   => '</h5>',
   ));
 
   register_sidebar( array(
-    'name'          => 'Footer area two',
+    'name'          => 'Footer Area 2',
     'id'            => 'footer_area_two',
-    'description'   => 'This widget area discription',
-    'before_widget' => '<section class="footer-area footer-area-two">',
+    'description'   => 'Podés agregar cualquier tipo de contenido acá',
+    'before_widget' => '<section class="footer-area-2 col-sm-12 col-lg-auto col-md-6 mt-3">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
+    'before_title'  => '<h5 class="footer-widget-title">',
+    'after_title'   => '</h5>',
   ));
 
   register_sidebar( array(
-    'name'          => 'Footer area three',
+    'name'          => 'Footer Area 3',
     'id'            => 'footer_area_three',
-    'description'   => 'This widget area discription',
-    'before_widget' => '<section class="footer-area footer-area-three">',
+    'description'   => 'Podés agregar cualquier tipo de contenido acá',
+    'before_widget' => '<section class="footer-area-3 col-sm-12 col-lg-auto col-md-6 mt-3">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
+    'before_title'  => '<h5 class="footer-widget-title">',
+    'after_title'   => '</h5>',
   ));
 
   register_sidebar( array(
-    'name'          => 'Footer area four',
+    'name'          => 'Footer Area 4',
     'id'            => 'footer_area_four',
-    'description'   => 'This widget area discription',
-    'before_widget' => '<section class="footer-area footer-area-three">',
+    'description'   => 'Podés agregar cualquier tipo de contenido acá',
+    'before_widget' => '<section class="footer-area-4 col-sm-12 col-lg-auto col-md-6 mt-3">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
+    'before_title'  => '<h5 class="footer-widget-title">',
+    'after_title'   => '</h5>',
   ));
 
 }
 
 add_action( 'widgets_init', 'register_widget_areas' );
+
+// Disables the block editor from managing widgets in the Gutenberg plugin.
+add_filter( 'gutenberg_use_widgets_block_editor', '__return_false', 100 );
+
+// Disables the block editor from managing widgets. renamed from wp_use_widgets_block_editor
+add_filter( 'use_widgets_block_editor', '__return_false' );
+
+function OA_customize_register( $wp_customize ) {
+  //All our sections, settings, and controls will be added here
+}
+add_action( 'customize_register', 'OA_customize_register' );
