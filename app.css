@@ -125,6 +125,7 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding-inline-start: 0px;
 }
 
 ol ol,
@@ -10683,7 +10684,7 @@ footer .full {
 }
 footer li {
   list-style-type: none;
-  text-align: right;
+  text-align: left;
 }
 footer .chivo {
   font-family: "FuturaLT";
@@ -10709,33 +10710,34 @@ footer .chivo a:hover {
   font-family: "FuturaLT";
   src: url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/FuturaLT-Book.ttf");
 
-/* 	font-family: 'Adam';
+  /* 	font-family: 'Adam';
 	src: url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Light.ttf"),
 	url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Bold.ttf"),
 		url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Medium.ttf"); */
 }
 
-
-
 @font-face {
   font-family: "Adam";
-  src:  url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Light.ttf") format('truetype');
-	font-weight: lighter;
-	  font-style: normal;
+  src: url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Light.ttf")
+    format("truetype");
+  font-weight: lighter;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Adam";
-  src:  url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Bold.ttf") format('truetype');
-	font-weight: bold;
-	  font-style: normal;
+  src: url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Adam";
-  src:  url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Medium.ttf") format('truetype');
-	font-weight: normal;
-	  font-style: normal;
+  src: url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Medium.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* @font-face {
@@ -10745,15 +10747,14 @@ footer .chivo a:hover {
   		url("https://oficinaambulante.com.ar/wp-content/themes/OA-theme/fonts/Adam-Medium.ttf") format('truetype') font-weight-normal;
 } */
 
-
 body {
   font-family: "FuturaLT" !important;
 }
 
 .titulo-nav {
-	font-family: Adam !important;
-	font-weight: bolder;
-	letter-spacing: 0.2rem;
+  font-family: Adam !important;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
 }
 
 .category-todos {
