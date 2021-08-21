@@ -1,8 +1,6 @@
 <?php get_header();?>
 
 <div class="container pt-3 mb-5">
-      
-        
         <?php
           $i=0;
           $no_of_columns=4;
@@ -36,7 +34,6 @@
              $i++; 
             if($i != 0 && $i % $no_of_columns == 0) { ?>
             </div>
-            <!-- <div class="clearfix"></div> -->
 
             <?php
             } ?>
@@ -44,6 +41,6 @@
             <?php  
             endwhile;
 ?>
-
+</div>
 
 <?php get_footer();?>
