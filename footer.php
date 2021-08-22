@@ -17,10 +17,10 @@
  !dynamic_sidebar('footer_area_four') ) : ?>
 <?php endif; ?>   
 
-        <div class="fixed-footer d-flex flex-column pt-2 col-sm-12 col-md-12 col-ls-12 justify-content-end bg-white fixed-bottom">
-                <p class="text-lg-right text-md-right text-sm-center text-center" style="margin-bottom: 5px"><a href="mailto:contacto@oficinaambulante.com.ar">contacto@oficinaambulante.com.ar</a></p>
-                <p class="text-lg-right text-md-right text-sm-center text-center" style="margin-bottom: 5px">Paraná, Entre Ríos.</p>
-        </div>
+        <?php if ( !function_exists('dynamic_sidebar') ||
+ !dynamic_sidebar('footer_area_fixed') ) : ?>
+<?php endif; ?>
+
         <div class="chivo pt-3 col-sm-12 col-md-12 col-ls-12 d-flex justify-content-center"><p>Desarrollado por <a href="https://www.leandrofritzler.com.ar">Leandro Andrés Fritzler</a></p></div>
     </div>
 </footer>

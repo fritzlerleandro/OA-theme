@@ -294,6 +294,15 @@ function register_widget_areas() {
     'after_title'   => '</h5>',
   ));
 
+    register_sidebar( array(
+    'name'          => 'Footer Fijo',
+    'id'            => 'footer_area_fixed',
+    'description'   => 'Esto queda siempre fijo en pantalla debajo de todo. Es recomendable usar poco texto para no opacar otro contenido. Si le ponés un título, va a aparecer como los del footer, modo contrario, sólo el texto que quieas (correo, lugar, etc)',
+    'before_widget' => '<div class="fixed-footer d-flex flex-column pt-2 col-sm-12 col-md-12 col-ls-12 justify-content-end bg-white fixed-bottom">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h5 class="footer-widget-title">',
+    'after_title'   => '</h5>',
+  ));
 }
 
 add_action( 'widgets_init', 'register_widget_areas' );
