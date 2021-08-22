@@ -4,10 +4,11 @@
 
     <div class="container">
 
-        <div class="d-flex justify-content-between fixed-top" style="margin: 8rem 1rem 0 1rem">
-            <p class="bold"><?php echo get_previous_post_link();?></p>
-            <!-- <p class="bold"><a href=<?//php get_next_post_link()?>>Next Post</a></p> -->
-            <p class="bold"><?php echo get_next_post_link();?></p>
+        <div class="post-navigation d-flex justify-content-between fixed-top" style="margin: 8rem 1rem 0 1rem">
+            <p class="post-nav-desktop"><?php echo get_previous_post_link('%link', '◄ %title')?></p>
+            <p class="post-nav-desktop"><?php echo get_next_post_link('%link', '%title ►');?></p>
+            <p class="post-nav-mobile"><?php echo get_previous_post_link('%link', '◄ Anterior')?></p>
+            <p class="post-nav-mobile"><?php echo get_next_post_link('%link', 'Siguiente ►');?></p>
         </div>
         <h1 class="proyecto"><?php the_title()?></h1>
          <p class="mb-1 text-center subtitulos"><?php the_field('lugar') ?></p>
