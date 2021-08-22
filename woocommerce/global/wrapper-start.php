@@ -22,6 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 $template = wc_get_theme_slug_for_templates();
 
 switch ( $template ) {
+	case 'OA-theme':
+		echo '<div id="primary" class="container content-area" ><main id="main" class="site-main" style="margin-top: 8.5rem" role="main">';
+	break;
 	case 'twentyten':
 		echo '<div id="container"><div id="content" role="main">';
 		break;
