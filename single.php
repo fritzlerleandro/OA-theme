@@ -1,14 +1,14 @@
 <?php get_header();?>
 
 <div class="content">
-    <div class="container-sm">
-        <div class="post-navigation d-flex justify-content-between fixed-top bg-white" style="margin: 8rem 1rem 0 1rem">
+    <div class="container-sm mt-5">
+        <div class="container post-navigation d-flex justify-content-between fixed-top bg-white" style="margin-top: 8rem">
             <p class="post-nav-desktop"><?php echo get_previous_post_link('%link', '◄ %title')?></p>
             <p class="post-nav-desktop"><?php echo get_next_post_link('%link', '%title ►');?></p>
             <p class="post-nav-mobile"><?php echo get_previous_post_link('%link', '◄ Anterior')?></p>
             <p class="post-nav-mobile"><?php echo get_next_post_link('%link', 'Siguiente ►');?></p>
         </div>
-        <h1 class="proyecto"><?php the_title()?></h1>
+        <h1 class="proyecto" style="margin-top: 5rem"><?php the_title()?></h1>
         <p class="mb-1 text-center subtitulos"><?php the_field('lugar') ?></p>
         <?php if( get_field('metros_cuadrados') ): ?>
             <p class="mb-1 text-center subtitulos">
