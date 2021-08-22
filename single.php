@@ -2,7 +2,7 @@
 
 <div class="content">
     <div class="container-sm mt-5">
-        <div class="container post-navigation d-flex justify-content-between fixed-top bg-white" style="margin-top: 8rem">
+        <div class="container post-navigation d-flex justify-content-between fixed-top bg-white" style="margin-top: 8.5rem">
             <p class="post-nav-desktop"><?php echo get_previous_post_link('%link', '◄ %title')?></p>
             <p class="post-nav-desktop"><?php echo get_next_post_link('%link', '%title ►');?></p>
             <p class="post-nav-mobile"><?php echo get_previous_post_link('%link', '◄ Anterior')?></p>

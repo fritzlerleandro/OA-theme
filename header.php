@@ -23,7 +23,7 @@
 
 <body <?php body_class('test');?>>
 <div id="wptime-plugin-preloader"></div>
-    <nav id="nav-bar" class="navbar navbar-expand-md navbar-light fixed-top mb-5 white-nav" style="margin-top:.1rem, margin-bottom: 4rem !important" role="navigation">
+    <nav id="nav-bar" class="navbar navbar-expand-md navbar-light fixed-top mb-5 white-nav" style="margin-top:.1rem, margin-bottom: 4rem !important; z-index:2000" role="navigation">
         <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
